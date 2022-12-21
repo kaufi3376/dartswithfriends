@@ -405,7 +405,25 @@ let syncthrow= (playerid, history, avg)=>{
 }
 
 document.getElementById("dartboard").addEventListener("click", (event)=>{
-    console.log(event.target.id)
+    if(playerid == playerscore.currentplayerid){
+            
+
+        if(throws>0){
+            if(event.target.id != "dartboard"){
+                playerscore.history.push(event.target.id)
+                
+                playerscore.avg["player"+playerid].throws+=1
+                playerscore.avg["player"+playerid].sumscore+= getpointbyid(event.target.id)
+                
+                syncthrow(playerscore.currentplayerid, playerscore.history, playerscore.avg)
+                throws--;
+
+            }
+
+        }
+
+
+    }
 })
 
 

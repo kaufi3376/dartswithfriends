@@ -5,12 +5,15 @@ const PORT = process.env.PORT || 5500
 app.use(express.static("public"));
 const http = require("http").Server(app);
 
+/*
 const io = require("socket.io")(3000, {
     cors: {
       origin: "*"
     }
   });
+*/
 
+const io = require("socket.io")(http);
   const users = {}
   const userswithroom= {}
 
@@ -18,7 +21,7 @@ const io = require("socket.io")(3000, {
     console.log("Listening on "+ PORT)
   })
 
-
+app.get("/", (req,res)=> res.sendFile(__dirname+"/index.html"));
 
 io.on("connection", socket =>{
     //socket.emit("chat", "Hello World")

@@ -1,5 +1,5 @@
-const socket = io("http://localhost:3000")
-//const socket = io()
+//const socket = io("http://localhost:3000")
+const socket = io()
 
 
 let roomNum=0

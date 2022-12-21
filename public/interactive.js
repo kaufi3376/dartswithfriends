@@ -1,3 +1,4 @@
+
 let maxleg= 1;
 let maxset = 1;
 let maxscore= 501;
@@ -403,9 +404,13 @@ let syncthrow= (playerid, history, avg)=>{
 
 }
 
+document.getElementById("dartboard").addEventListener("click", (event)=>{
+    console.log(event.target.id)
+})
 
 
 $(document).ready( function(){
+    console.log("Hello")
     $("#dartboard").click( function(evt){
         if(playerid == playerscore.currentplayerid){
             

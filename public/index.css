@@ -1,0 +1,82 @@
+#scheibe{
+
+    border: 3px solid black;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    width: 50%;
+    padding: 1rem;
+    background-color: deepskyblue;
+
+}
+
+
+
+#playerfield{
+    border: 3px solid black;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    width: 50%;
+    padding: 1rem;
+    background-color: deepskyblue;
+}
+
+
+#joinroom{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    width: 50%;
+    padding: 1rem;
+}
+
+#newroom{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    width: 50%;
+    padding: 1rem;
+}
+
+
+#interface{
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+svg{
+    width: 100%;
+    height: 100%;
+}
+
+path{
+    pointer-events:all;
+}
+
+.card{
+    margin: 20px;
+    font-size: x-large;
+}
+
+#beenden{
+    float: right;
+    
+}
+
+#miss{
+    position: absolute;
+
+}
+
+#menu{
+    border-radius: 25px;
+    background: #4F9962;
+}
+
+#nameinput{
+    width: 90%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
